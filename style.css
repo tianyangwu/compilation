@@ -1,0 +1,283 @@
+/* font-family: 'Playfair Display', serif; */
+/* rgb(252,252,252); */
+html{
+  margin: -10px;
+  padding: 0px;
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(252,252,252);
+}
+a{
+  text-decoration: none;
+}
+/* curtain opening */
+.background{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(252,252,252);
+  -webkit-animation-name: "enter";
+  -webkit-animation-duration: 4s;
+}
+@-webkit-keyframes enter {
+  0%{
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    background-color: black;
+  }
+  60%{
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    background-color: black;
+  }
+  100%{
+    width: 0vw;
+    height: 100vh;
+    left: 100vw;
+    background-color: black;
+  }
+}
+/* H1 enters from left */
+h1{
+  position: fixed;
+  left: 40px;
+  font-size: 50px;
+  -webkit-animation-name: "show";
+  -webkit-animation-duration: 4s;
+  color: black;
+  font-weight: 400;
+}
+@-webkit-keyframes show {
+  0%{
+    left: 0px;
+    opacity: 0;
+    color: rgb(252,252,252);
+  }
+  30%{
+    left: 40px;
+    opacity: 1;
+    color:rgb(252,252,252);
+  }
+  50%{
+    left: 40px;
+    opacity: 1;
+    color:rgb(252,252,252);
+  }
+  100%{
+    left: 40px;
+    opacity: 1;
+    color:black;
+  }
+}
+
+/* NAVIGATION appears from right */
+.nav{
+  display: block;
+  position: fixed;
+  right: 80px;
+  top: 25px;
+  z-index: 1;
+}
+.bar1{
+  position: fixed;
+  top: 55px;
+  width: 36px;
+  height: 3px;
+  background-color: black;
+  -webkit-animation-name: "show1";
+  -webkit-animation-duration: 4s;
+}
+@-webkit-keyframes show1 {
+  0%{
+    right: 0px;
+    opacity: 0;
+  }
+  30%{
+    right: 0px;
+    opacity: 0;
+    color:rgb(252,252,252);
+    background-color: white;
+  }
+  45%{
+    right: 44px;
+    opacity: 1;
+    background-color: rgb(252,252,252);
+  }
+  90%{
+    right: 44px;
+    opacity: 1;
+    background-color: rgb(252,252,252);
+  }
+  100%{
+    right: 44px;
+    opacity: 1;
+    background-color: black;
+  }
+}
+.bar2{
+  position: fixed;
+  top: 68px;
+  width: 36px;
+  height: 3px;
+  background-color: black;
+  -webkit-animation-name: "show2";
+  -webkit-animation-duration: 4s;
+}
+@-webkit-keyframes show2 {
+  0%{
+    right: 0px;
+    opacity: 0;
+  }
+  45%{
+    right: 0px;
+    opacity: 0;
+    color:white;
+    background-color:rgb(252,252,252);
+  }
+  60%{
+    right: 44px;
+    opacity: 1;
+    background-color: rgb(252,252,252);
+  }
+  90%{
+    right: 44px;
+    opacity: 1;
+    background-color: rgb(252,252,252);
+  }
+  100%{
+    right: 44px;
+    opacity: 1;
+    background-color: black;
+  }
+}
+.bar3{
+  position: fixed;
+  top: 81px;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  -webkit-animation-name: "show3";
+  -webkit-animation-duration: 4s;
+}
+.blank{
+  position: fixed;
+  top: 55px;
+  width: 36px;
+  height: 36px;
+  background-color:rgba(1,1,1,0);
+}
+@-webkit-keyframes show3 {
+  0%{
+    right: 0px;
+    opacity: 0;
+  }
+  60%{
+    right: 0px;
+    opacity: 0;
+    color:white;
+    background-color: rgb(252,252,252);
+  }
+  75%{
+    right: 60px;
+    opacity: 1;
+    background-color:rgb(252,252,252);
+  }
+  90%{
+    right: 60px;
+    opacity: 1;
+    background-color:rgb(252,252,252);
+  }
+  100%{
+    right: 60px;
+    opacity: 1;
+    background-color: black;
+  }
+}
+/* ABOUT */
+.n1:hover{
+  text-decoration: underline;
+}
+/* PROJECTS */
+.type{
+  position: fixed;
+  top: 60px;
+  font-weight: 600;
+}
+.n1{
+  right: 500px;
+}
+.n2{
+  right: 400px;
+}
+.pi:hover{
+  text-decoration: underline;
+}
+.pi:active{
+  color: rgb(139,0,0);
+}
+.pp{
+  position: fixed;
+  padding-top: 15px;
+  display: block;
+  font-weight: 400;
+}
+.pi{
+  margin-top: 13px;
+}
+.p1{
+  right: 400px;
+}
+.p2{
+  right: 400px;
+}
+.p3{
+  right: 400px;
+}
+.n3{
+  right: 300px;
+}
+.n4{
+  right: 130px;
+}
+
+.hide{
+  display: none;
+}
+.appear{
+  -webkit-animation-name: "appear";
+  -webkit-animation-duration: 1s;
+}
+@-webkit-keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* EXCERCISE */
+.n3:hover{
+  text-decoration: underline;
+}
+/* READING */
+.n4:hover{
+  text-decoration: underline;
+}
+/* iframe */
+iframe{
+  position: fixed;
+  top: 120px;
+  left: 15vw;
+  width: 70vw;
+  height: 80vh;
+}
+.tag{
+  transform: rotate(270deg);
+  text-decoration: underline;
+  position: fixed;
+  top: 160px;
+  left: 100px;
+  font-size: 20px;
+}
