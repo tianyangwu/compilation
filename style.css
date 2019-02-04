@@ -273,11 +273,69 @@ iframe{
   width: 70vw;
   height: 80vh;
 }
+
 .tag{
   transform: rotate(270deg);
   text-decoration: underline;
   position: fixed;
   top: 160px;
-  left: 100px;
+  left: 8vw;
   font-size: 20px;
+}
+.left{
+  pointer-events: none;
+  z-index: 1;
+  position: fixed;
+  bottom: 7.5vh;
+  right: 4vw;
+  height: 28px;
+  opacity: 0.5;
+}
+.left:hover{
+  opacity: 1;
+}
+.right{
+  pointer-events: none;
+  z-index: 1;
+  position: fixed;
+  bottom: 7.5vh;
+  left: 5vw;
+  height: 28px;
+  opacity: 0.5;
+}
+.right:hover{
+  opacity: 1;
+}
+.tag1{
+  position: fixed;
+  bottom: 8vh;
+  left: 4.5vw;
+  opacity: 0;
+  padding-left: 30px;
+  /* background-color: red; */
+  transition: opacity 1s linear
+}
+.tag2{
+  position: fixed;
+  bottom: 8vh;
+  right: 3.5vw;
+  opacity: 0;
+  padding-right: 30px;
+  /* background-color: red; */
+  transition: opacity 1s linear
+}
+.tag1:hover{
+  opacity: 1;
+}
+.tag2:hover{
+  opacity: 1;
+}
+.text{
+  position: fixed;
+  top: 120px;
+  left: 20vw;
+  width: 65vw;
+  height: 80vh;
+  overflow:scroll;
+  line-height: 28px;
 }

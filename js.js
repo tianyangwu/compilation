@@ -36,8 +36,48 @@ $(".n3").click(function(){
   $(".link").addClass("hide");
   $(".ex").removeClass("hide");
 })
+$(".n4").click(function(){
+  $(".link").addClass("hide");
+  $(".re").removeClass("hide");
+})
 $("h1").click(function(){
   $(".link").addClass("hide");
+})
+$(".p3ex").click(function(){
+  $(".link").addClass("hide");
+  $(".ex").removeClass("hide");
+})
+$(".exp3").click(function(){
+  $(".link").addClass("hide");
+  $(".pro3").removeClass("hide");
+})
+$(".p2p3").click(function(){
+  $(".link").addClass("hide");
+  $(".pro3").removeClass("hide");
+})
+$(".p1p2").click(function(){
+  $(".link").addClass("hide");
+  $(".pro2").removeClass("hide");
+})
+$(".p3p2").click(function(){
+  $(".link").addClass("hide");
+  $(".pro2").removeClass("hide");
+})
+$(".p2p1").click(function(){
+  $(".link").addClass("hide");
+  $(".pro1").removeClass("hide");
+})
+$(".p3re").click(function(){
+  $(".link").addClass("hide");
+  $(".re").removeClass("hide");
+})
+$(".reex").click(function(){
+  $(".link").addClass("hide");
+  $(".ex").removeClass("hide");
+})
+$(".exre").click(function(){
+  $(".link").addClass("hide");
+  $(".re").removeClass("hide");
 })
 
 // cursor changing
@@ -49,4 +89,10 @@ $(".type").mouseover(function(){
 });
 $(".bar").mouseover(function(){
 	$(".bar").css("cursor","Pointer");
+});
+$(".tag1").mouseover(function(){
+	$(".tag1").css("cursor","Pointer");
+});
+$(".tag2").mouseover(function(){
+	$(".tag2").css("cursor","Pointer");
 });
