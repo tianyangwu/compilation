@@ -194,9 +194,61 @@ h1{
     background-color: black;
   }
 }
+.link a{
+  color: black;
+}
+.name{
+  font-family: 'Raleway Dots', cursive;
+  position: fixed;
+  left: 45vw;
+  top: 60px;
+  font-size: 25px;
+}
 /* ABOUT */
 .n1:hover{
   text-decoration: underline;
+}
+.aboutme{
+  font-size: 60px;
+  position: fixed;
+  top: 28vh;
+  left: 30vw;
+}
+.abttext{
+  font-size: 25px;
+  position: fixed;
+  top: 45vh;
+  left:30vw;
+  right: 20vw;
+  line-height: 45px;
+  bottom: 10vh;
+}
+.aboutmetext{
+  z-index: 3;
+}
+.aboutmetext2{
+  top: 70vh;
+  opacity: 0;
+  z-index: 2;
+}
+.aboutmetext3{
+  top: 70vh;
+  opacity: 0;
+  z-index: 1;
+}
+.aboutmetext4{
+  top: 70vh;
+  opacity: 0;
+  z-index: 1;
+}
+span{
+  text-decoration: overline;
+}
+.opacity{
+  opacity: 0;
+}
+.pointerno{
+  pointer-events: none;
 }
 /* PROJECTS */
 .type{
@@ -271,9 +323,11 @@ iframe{
   top: 120px;
   left: 15vw;
   width: 70vw;
-  height: 80vh;
+  height: 75vh;
+  /* border-width: 1px;
+  border-color: rgba(0,0,0,0.1); */
 }
-
+/* vertical tag */
 .tag{
   transform: rotate(270deg);
   text-decoration: underline;
@@ -282,46 +336,39 @@ iframe{
   left: 8vw;
   font-size: 20px;
 }
+/* page navigation */
 .left{
   pointer-events: none;
   z-index: 1;
   position: fixed;
-  bottom: 7.5vh;
+  bottom: 11.5vh;
   right: 4vw;
   height: 28px;
   opacity: 0.5;
-}
-.left:hover{
-  opacity: 1;
 }
 .right{
   pointer-events: none;
   z-index: 1;
   position: fixed;
-  bottom: 7.5vh;
+  bottom:11.5vh;
   left: 5vw;
   height: 28px;
   opacity: 0.5;
 }
-.right:hover{
-  opacity: 1;
-}
 .tag1{
   position: fixed;
-  bottom: 8vh;
+  bottom: 12vh;
   left: 4.5vw;
   opacity: 0;
   padding-left: 30px;
-  /* background-color: red; */
   transition: opacity 1s linear
 }
 .tag2{
   position: fixed;
-  bottom: 8vh;
+  bottom: 12vh;
   right: 3.5vw;
   opacity: 0;
   padding-right: 30px;
-  /* background-color: red; */
   transition: opacity 1s linear
 }
 .tag1:hover{
@@ -330,7 +377,7 @@ iframe{
 .tag2:hover{
   opacity: 1;
 }
-.text{
+.text1{
   position: fixed;
   top: 120px;
   left: 20vw;
@@ -339,3 +386,130 @@ iframe{
   overflow:scroll;
   line-height: 28px;
 }
+
+/* homepage recs */
+.home{
+  position: fixed;
+  height: 40vh;
+  width: 6vw;
+}
+.rec1{
+  background-color: rgb(0,0,0);
+  top: 30vh;
+  left: 33vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec1:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.rec2{
+  background-color: rgb(40,40,40);
+  top: 30vh;
+  left: 39vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec2:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.rec3{
+  background-color: rgb(80,80,80);
+  top: 30vh;
+  left: 45vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec3:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.rec4{
+  background-color: rgb(120,120,120);
+  top: 30vh;
+  left: 51vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec4:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.rec5{
+  background-color: rgb(160,160,160);
+  top: 30vh;
+  left: 57vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec5:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.rec6{
+  background-color: rgb(200,200,200);
+  top: 30vh;
+  left: 63vw;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+}
+.rec6:hover{
+  width: 30vw;
+  height: 44vh;
+  transform: translateX(-24vw);
+  transform: translateY(-1vh);
+  z-index: 1;
+}
+.text{
+  z-index: 2;
+  color: white;
+  text-shadow: 0 0 5px white;
+  position: fixed;
+  top: 49vh;
+  font-size: 22px;
+  pointer-events: none;
+}
+.recab{
+  left: 45vw;
+}
+.recp1{
+  left: 51vw;
+}
+.recp2{
+  left: 57vw;
+}
+.recp3{
+  left: 63vw;
+}
+.recex{
+  left: 69vw;
+}
+.recre{
+  left: 71vw;
+}
+.home{
+  -webkit-animation-name: "homeappear";
+  -webkit-animation-duration: 6s;
+}
+@-webkit-keyframes homeappear {
+  0%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}　
