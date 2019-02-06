@@ -9,6 +9,13 @@ html{
 a{
   text-decoration: none;
 }
+.git{
+  z-index: 1;
+  position: fixed;
+  bottom: 3vh;
+  right: 49vw;
+  opacity: 0.4;
+}
 /* curtain opening */
 .background{
   position: fixed;
@@ -257,10 +264,10 @@ span{
   font-weight: 600;
 }
 .n1{
-  right: 500px;
+  right: 600px;
 }
 .n2{
-  right: 400px;
+  right: 500px;
 }
 .pi:hover{
   text-decoration: underline;
@@ -278,18 +285,21 @@ span{
   margin-top: 13px;
 }
 .p1{
-  right: 400px;
+  right: 500px;
 }
 .p2{
-  right: 400px;
+  right: 500px;
 }
 .p3{
-  right: 400px;
+  right: 500px;
 }
 .n3{
-  right: 300px;
+  right: 400px;
 }
 .n4{
+  right: 230px;
+}
+.n5{
   right: 130px;
 }
 
@@ -512,4 +522,30 @@ iframe{
   100%{
     opacity: 1;
   }
-}　
+}
+.process{
+  /* position: fixed;
+  top: 120px;
+  left: 15vw;
+  width: 70vw;
+  height: 75vh; */
+  overflow: scroll;
+}
+.m1{
+  position: fixed;
+  top: 120px;
+  left: 15vw;
+  width: 25vw;
+}
+.m2{
+  position: fixed;
+  top: 120px;
+  left: 41vw;
+  width: 25vw;
+}
+.m3{
+  position: fixed;
+  top: 120px;
+  left: 67vw;
+  width: 25vw;
+}

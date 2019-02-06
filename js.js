@@ -3,6 +3,7 @@ $(".navigation").addClass("hide");
 $(".nav").click(function(){
   $(".navigation").toggleClass("hide");
   $(".navigation").toggleClass("appear");
+  $(".name").toggleClass("hide");
 })
 
 // project navgation
@@ -275,6 +276,18 @@ $(".reex").click(function(){
   $(".ex").removeClass("hide");
 })
 $(".exre").click(function(){
+  $(".link").addClass("hide");
+  $(".re").removeClass("hide");
+})
+$(".n5").click(function(){
+  $(".link").addClass("hide");
+  $(".pro").removeClass("hide");
+})
+$(".repro").click(function(){
+  $(".link").addClass("hide");
+  $(".pro").removeClass("hide");
+})
+$(".prore").click(function(){
   $(".link").addClass("hide");
   $(".re").removeClass("hide");
 })
